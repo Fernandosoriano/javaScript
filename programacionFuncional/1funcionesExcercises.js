@@ -206,3 +206,10 @@
     // numberSquares(5) ➞ 55
     console.log(numberSquares(1));
 }
+
+{ //10.-Create a function that returns a base-2 (binary) representation of a base-10 (decimal)
+    //  string number. To convert is simple: 
+    //  ((2) means base-2 and (10) means base-10) 010101001(2) = 1 + 8 + 32 + 128.
+    const binary = decimal => decimal.toString(2);
+    // console.log(binary(6));
+}

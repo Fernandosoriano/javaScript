@@ -156,3 +156,14 @@
     };
     console.log(arrayOfMultiples(17, 6));
 }
+
+// 6.- Find the Smallest and Biggest Numbers
+//Create a function that takes an array of numbers and return both
+//the minimum and maximum numbers, in that order.
+//FUENTE: https: //edabit.com/challenge/Q3n42rEWanZSTmsJm
+function minMax(arr) {
+    min = Math.min(...arr)
+    max = Math.max(...arr)
+    return [min, max]
+}
+console.log(minMax([1, 2, 3, 4, 5]));

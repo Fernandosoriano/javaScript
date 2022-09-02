@@ -22,4 +22,30 @@ function seriesResistance(arr) {
     }
     return suma <= 1 ? `${suma} ohm` : `${suma} ohms`
 }
-console.log(seriesResistance([1, 5, 6, 3]));
+// console.log(seriesResistance([1, 5, 6, 3]));
+
+// 4.-Number Split
+// Given a number, return an array containing the two halves of the number.
+// If the number is odd, make the rightmost number higher.
+
+function numberSplit(n) {
+    if (n % 2 == 0) {
+        half = n / 2
+        l = [half, half]
+    } else if (n % 2 != 0 && n > 0) {
+        half = n / 2
+        half_inf = Math.floor(half)
+        half_sup = Math.ceil(half)
+        l = [half_inf, half_sup]
+    } else if (n < 0) {
+        half = n / 2
+        half_inf = Math.floor(half)
+        half_sup = Math.ceil(half)
+        l = [half_inf, half_sup]
+    }
+    return l
+}
+// la más votada:
+function numberSplit(n) {
+    return [Math.floor(n / 2), Math.ceil(n / 2)]
+}

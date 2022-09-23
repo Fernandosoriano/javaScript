@@ -49,3 +49,19 @@ function numberSplit(n) {
 function numberSplit(n) {
     return [Math.floor(n / 2), Math.ceil(n / 2)]
 }
+
+function perimeter(l, num) {
+    return (l == 'c') ? 2 * 3.14 * num : 4 * num
+}
+// console.log(perimeter("s", 7));
+// console.log(perimeter("c", 4));
+// console.log(perimeter("c", 9));
+
+let activities = [
+    ['Work', 9],
+    ['Eat', 1],
+    ['Commute', 2],
+    ['Play Game', 1],
+    ['Sleep', 7]
+];
+console.table(activities);

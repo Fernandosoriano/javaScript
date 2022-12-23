@@ -50,6 +50,7 @@ function numberSplit(n) {
     return [Math.floor(n / 2), Math.ceil(n / 2)]
 }
 
+// 5
 function perimeter(l, num) {
     return (l == 'c') ? 2 * 3.14 * num : 4 * num
 }
@@ -57,15 +58,11 @@ function perimeter(l, num) {
 // console.log(perimeter("c", 4));
 // console.log(perimeter("c", 9));
 
-let activities = [
-    ['Work', 9],
-    ['Eat', 1],
-    ['Commute', 2],
-    ['Play Game', 1],
-    ['Sleep', 7]
-];
-// console.table(activities);
 
+// 6.-Spotlight Sum
+// Given a 10x10 grid of numbers 1-100, return the Spotlight Sum,
+// given a number n. The spotlight sum can be defined as the total of the
+// 8 numbers immediately surrounding the number n on the grid, including n in the total.
 function spotlightSum(n) {
     m = [
         [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
@@ -97,4 +94,8 @@ function spotlightSum(n) {
         }
     }
 }
-console.log(spotlightSum(45));
+// Notes:
+// Note that any numbers which don't have the full 8 numbers surrounding it
+// are not included in the tests.
+// FUENTE: https://edabit.com/challenge/PZ7rZh9C47CvYHfN2
+// console.log(spotlightSum(45));
